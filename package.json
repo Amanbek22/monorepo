@@ -1,0 +1,19 @@
+{
+  "name": "@monorepo-app/root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "craco": "^0.0.3",
+    "lerna": "^5.4.3"
+  },
+  "scripts": {
+    "start": "lerna exec --scope @fe-dipatch/app -- yarn start"
+  },
+  "workspaces": [
+    "packeges/client/*",
+    "packeges/server/*",
+    "libs/*"
+  ]
+}
